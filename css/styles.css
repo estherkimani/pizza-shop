@@ -1,0 +1,416 @@
+:root {            /*have opted to use :root pseudo-class as a selector to select the highest-level parent of the page */
+--yellow:#F7CA3E;
+}
+* {
+  font-family: 'Roboto', sans-serif;  /*Gotten from https://fonts.google.com/*/
+  margin:0; padding: 0; /*Setting padding for the logo*/
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize; /*Make the texts capitalized*/
+  transition: all .2s linear;
+
+
+}
+h1, h3 {
+  font-family: 'Oswald', sans-serif; /*Gotten from https://fonts.google.com/*/
+}
+*::selection {    /*to match the portion of the element that is selected by the users.*/
+  background: var(--yellow);
+  color: #fff;
+}
+#header{
+  position: fixed;
+  top:0; /*to set position from the top*/
+  left: 0; /*to set position from the left*/
+  z-index: 1000; /*to define how much the content will overlap*/
+  width: 100%; /*to make the page cover the whole page*/
+  background: white;
+  padding: 1.5rem 10%; /*To set the position inside the navbar*/
+  box-shadow: 0 .3rem 2rem rgba(0, 0, 0, 0.5); /*sets the shadow aroud the nav box*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;/*to seperate the logo and the content*/
+}
+html{
+  font-size: 63%;
+  overflow-x: hidden;
+}
+.logo #logo {
+  height: 80px;  /*to set the height of the logo and the wordings*/
+}
+#list {
+  display: flex; /*to align the items horizontally on the nav bar, otherwise they will drop downwards*/
+  align-items: center;
+  justify-content: center; /*to place the content at the center*/
+  list-style: none; /*since we are selecting a list, this is to remove the numberings*/
+}
+#list2 {
+  margin-left: 20px; /*to seperate the names inside the navbar*/
+}
+ #alist{
+  font-size: 1.8rem; /*to set the size of the words inside the navbar*/
+  color: #95918D; /*to set the color of the words in the navbar*/
+}
+#alist.active, /*to make the hover effect color remain on the page opened*/
+#alist:hover{
+  color:#8E1810;   /*to set the color of the hover effect when cursor goes on the names*/
+}
+#top-bar{
+  font-size: 30px;
+  color: #8E1810;
+  cursor: pointer; /*changing the icon to be apointer when on hover over the pizza icon*/
+display: none; /*to make the pizza icon disappear until on media query*/
+}
+body{
+  overflow-x: hidden;
+}
+section {
+  min-height: 100vh; /*To create the height of the page. Got vh from w3 schools*/
+  padding: 1rem 10%; /*To create the space around the content, 1rem for space from bottom and 10% for from left*/
+  padding-top: 8.5rem;
+}
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.home .image {
+  flex: 1 1 40rem;
+}
+.home .image img{
+  width: 100%;     /*To organize the contents in a row format....ie image next to the wording*/
+}
+.home .content {
+  flex: 1 1 40rem; /*to flex the size of the image*/
+}
+#heading3 {
+  color: #9C4646; /*color of h3, but not all h3s cz i gave it an ID*/
+  font-size: 60px;  /*to set the size of heading*/
+}
+#paragraph1{
+  color:#867F7F; /*to set the color of the landing page wordings*/
+  font-size: 15px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+#button1,
+#button2,
+#button3,
+#button4
+{ /*code to translate the statement Lets Have Fun to a clickable button*/
+  padding: 11.2px 64px; /*to set the space between words button boundary inside the button. 11.2px for top and bottom and 64px for left and center*/
+  border-radius: 20px; /*to make the button round*/
+  font-size: 20px; /*To set the size of the button*/
+  margin-top: 15px;
+  background: none; /*to remove the greyish background behind the button*/
+  color: #731010;
+  cursor: pointer; /*to change the cursor to hand*/
+  border: 2px solid #731010; /*to stsyle the button, 2px to create the size of the lines marking the button,
+                              solid; to make the line continous, #731010; to set the color of the button boundary*/
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
+
+}
+#button1:hover{ /*to create the hover effect on the button*/
+  background-color: #B38D8D; /*to create the hover color-effect on the button*/
+  transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
+                          Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
+                          makes the button hover frontwards towards the screen*/
+  box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover above the icon as also it 'fades out'*/
+}
+#button2:hover {
+    background-color: #B38D8D; /*to create the hover color-effect on the button*/
+    transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
+                            Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
+                            makes the button hover frontwards towards the screen*/
+    box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover above the icon as also it 'fades out'*/
+}
+#button3:hover {
+    background-color: #B38D8D; /*to create the hover color-effect on the button*/
+    transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
+                            Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
+                            makes the button hover frontwards towards the screen*/
+    box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover above the icon as also it 'fades out'*/
+
+}
+#button3{
+  margin: 10px; /*to set the margin size around the icons*/
+}
+#button4 {
+  margin: 5px; /*to set the margin size around the icons*/
+}
+#button4:hover {
+    background-color: #B38D8D; /*to create the hover color-effect on the button*/
+    transform: scale(0.7); /*to make the button hover towards the screen as you put the cursor on top
+                            Putting the scale between 0 and 0.9 makes the button hover inward while between 1.1 and 2
+                            makes the button hover frontwards towards the screen*/
+    box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover above the icon as also it 'fades out'*/
+}
+.popular {
+background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url(../public/pizza8.jpeg) no-repeat;
+                /*To fix the image as background*/
+background-size: cover; /*To fix the ENTIRE image at the center*/
+background-position: center; /*To fix the ENTIRE image at the center*/
+background-attachment: fixed; /*To make the background image not to move as users scroll downwards*/
+}
+.box-container {
+  display: flex; /*to make the boxes be arranged in two by two  in one box*/
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ .box {
+  background: #E5E2E2; /*to set the color insode the box*/
+  width: 300px; /*to set the size(width) of the boxes and the order.*/
+  height: 400px; /*to set the size(length) of the boxes and the order.*/
+  padding: 16px; /*To set the distance between the image and the border inside the boxes*/
+  margin: 30px; /*to set the margins*/
+  border-radius: 30px; /*to make the boxes look circular*/
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.9); /*to set the shadow at the edges of the boxes*/
+  text-align: center; /*to set the words at the center of the box*/
+}
+
+#img2 {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+.h3{
+  font-size: 30px;
+  color: #060101;
+}
+#heading33{
+  font-size: 40px;
+  color: #560F0F;
+  padding-left: 130px;
+}
+#orderheader{
+  font-size: 15px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+#optionlabel{
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+  color: #BC0707;
+  
+}
+#order {
+  /* padding: 5px; */
+  padding-top: 10px;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+.pizzasize,
+.Crust,
+.radiobtn,
+.toppings
+{
+  font-size: 15px;
+  padding-left: 10px;
+  margin: 7px;
+  background-color: #C88B8B;
+}
+.smileyface {
+  color: #A51F1F; /*to set the color of the smileyicons*/
+  font-size: 25px; /*to set the size of */
+  padding: 5px 2px; /*5px to set the space around the stars and 2px to set the distance between the stars*/
+}
+.price {
+  font-size: 15px;
+  color: #000000;
+  font-weight: bolder;
+  padding: 5px; /*5px to set the space around the price from top and down*/
+
+}
+.box:hover {
+  box-shadow: 0 30px 30px 30px rgba(0, 0, 0, 0.4); /*to create a shadow as you hover*/
+  transform: scale(0.7); /*to make the boxes hover towards the screen as you put the cursor on top*/
+}
+.heading5,
+.heading6{
+  text-align: center; /*To plave the eader at the center*/
+  color: black;
+  padding: 9 .5rem; /*remove*/
+  font-size: 30px; /*setting the size of the header*/
+}
+.placeorder {
+  background-position: center;
+}
+
+.boxorder{
+  padding: 5px; /*to style the width of the typing box */
+  margin: 8px; /*to set the distance between the boxes*/
+  font-size: 15px; /*to set the font size inside the order boxes*/
+  color: #FEFCFC; /*to set the color of the typed info*/
+  text-transform: none;
+  width: 50%; /*to set the width of the boxes*/
+  background: rgb(0, 0, 0, 0.4) /* Purple TRANSPARENT background with 40% opacity */
+}
+.address{
+  height: 90px;
+  padding: 5px; /*to style the width of the address box */
+  margin: 8px; /*to set the distance between the  address box*/
+  font-size: 15px; /*to set the font size inside the  address boxes*/
+  color: #FEFCFC; /*to set the color of the typed info*/
+  text-transform: none;
+  background: rgb(0, 0, 0, 0.4); /* black background with 40% opacity */
+  width: 50%; /*to set the width of the  address box*/
+}
+::placeholder { /* Code to change the color of the placeholders to white */
+  color: #FCFBFB;
+}
+.placeorder {
+background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url(../public/pizza9.jpeg) no-repeat;
+                /*To fix the image as background*/
+background-size: cover; /*To fix the ENTIRE image at the center*/
+background-position: center; /*To fix the ENTIRE image at the center*/
+background-attachment: fixed; /*To make the background image not to move as users scroll downwards*/
+}
+#menuspan {
+  color: #971010; /*Styling the name Foods seperately/color*/
+}
+#popular {
+  color: #971010; /*Styling the name Foods seperately/color*/
+}
+#menu
+#list {
+  border-top: dashed 3px rgba(0, 0, 0, 0.5); /*to put and style a line on top of the icons...used 3px to set its width(upana),                                              dashed to make it a broken line and rgba to set its relative color*/
+  border-bottom: dashed 3px rgba(0, 0, 0, 0.5); /*to put and style a line at the bottom of the icons...used 3px to set its width(upana),                                            dashed to make it a broken line and rgba to set its relative color*/
+  padding-bottom: 10px; /*To set the distance between between the dashed line and the icons from bottom*/
+  padding-top: 1px; /*To set the distance between between the dashed line and the icons from top*/
+  align-items: center;
+  justify-content: center; /*to place the icons at the center*/
+  display: flex;
+  list-style: none; /*to remove the numbering on the icons*/
+}
+html::-webkit-scrollbar{
+  width: 22.4px;
+}
+html::-webkit-scrollbar-track{
+  background: #333;
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--yellow);
+}
+.aboutus{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about,
+.image1{
+flex: 1 1 400px; /*to size the image in about us section*/
+height: 500px; /*to set the height of the image in about us section*/
+background: url(../public/pizza5.png), url(../public/pizza6.png) no-repeat; /*to place the images on top of each other*/
+background-size: cover; /*to make the image cover the entire area of the box as one image*/
+background-position: center;
+background-blend-mode: overlay; /*from w3 to define the blending mode of the background layer image*/
+padding-left: 20px;
+}
+.about,
+.aboutuscontent {
+  flex: 1 1 30rem;/*to store the contect inside the ABOUT US div*/
+  padding: 20px; /*to set the size of the space behind between words and image in the ABOUT US div*/
+}
+.aboutus .aboutuscontent h3 {
+  font-size: 40px; /*settings for heading in ABOUT US*/
+  color: #971010; /*color for heading in ABOUT US*/
+}
+.aboutus .aboutuscontent p {
+  font-size: 13px;
+  padding: 18px 0;
+  color: #000000;
+  font-family: font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*WHERE MEDIA QUIRIES STARTS*/
+@media (max-width:750px){
+  html{
+    font-size: 50%;
+  }
+  #top-bar{
+  display: block; /*to make the pizza icon disappear until on media query*/
+  }
+  .narbar{
+    position: fixed;
+    top: 15px; /*seting the distance from top on phone*/
+    left: 0; /*to set the distance of the icon from the left on phone*/
+    width: 100%;
+    transform: scaleY(0); /*to set the height of the box*/
+    transform-origin: top; /*to style the top div to remain at the top and not rotate*/
+    opacity: 0;
+    background: #7C4541; /*to set the color of the nav bar on phone*/
+    border-top: .3rem solid rgba(0, 0, 0, 0.2);
+  }
+#list{
+  flex-flow: column; /*to make the words inside the nav bar flow downwards on phone*/
+  padding-left: 36px; /*To set the distance of the wording inside the navbar showing how far to the right the wordings should be placed*/
+}
+#list2 {
+  margin: 15px;
+  width: 100%;
+}
+.narbar .nav-toggle {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.home{
+  text-align: center;
+}
+.content{
+  text-align: center;
+}
+#heading3{
+  font-size: 40px;
+}
+#alist{
+  display: block;
+  color: #FCF9F9; /*to set the color of the words when on phone to white*/
+  padding-left: 20px;
+  border-left: #fff 3px solid;  /*to set the fontsize, color and location of the icons behind the navbar wordings when on phone*/
+  font-size: 15px; /*to set the font size of the words on phone*/
+}
+.fa-times{
+  transform: rotate(180deg);
+}
+#alist:hover,
+alist.active {
+   /* color: #FAC0BC; */
+   background-color: #856B69; /*to set the color of the hover bar when on phone*/
+}
+#content{
+  text-align: center;
+}
+#heading3 {
+  font-size: 30px;
+}
+section{
+  padding-top: 100px;
+  padding: 16px 6%;
+}
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Delicacy Pizza Inn</title>
+<!-- Linking to my font awesome cdn link account -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Linking to my css file -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Google fonts linking -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+<!-- Gotten this link from cdnjs.com then typed aos.....w3 schools css3 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  </head>
+  <body>
+    <!-- Demacates the starts of the start of the header section.  -->
+<header id="header">
+  <a href="#" class="logo"><img src="public/KFC-logo.png" id="logo" alt=""></a>
+  <div id="top-bar" class="fas fa-pizza-slice"></div>
+  <!-- REMEMBER: Gotten the pizza icon for use in media query from an account i create on https://fontawesome.com/ -->
+  <nav class="narbar">
+    <ul id="list">
+      <li id="list2"><a href="#home" id="alist">HOME</a></li>
+      <li id="list2"><a href="#about" id="alist">ABOUT</a></li>
+      <li id="list2"><a href="#menu" id="alist">MENU</a></li>
+      <li id="list2"><a href="#popular" id="alist">POPULAR</a></li>
+      <li id="list2"><a href="#gallery" id="alist">GALLERY</a></li>
+      <li id="list2"><a href="#order" id="alist">ORDER-NOW</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- Demacates the end of the header section.  -->
+
+<!-- Demacate Landing page starts here -->
+<section id="home" class="home">
+ <div class="content" data-aos="fade-right">
+<!-- data-aos="fade-right" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
+   <h3 id="heading3">Good pizza is always generous</h3>
+   <p id="paragraph1">Produced in-house daily always tastes better. The Twisty Bread, the signature Wingz and the
+     delicious Double Meal are additional value-for-money options to make you feel at home at Nonnie Pizza Inn.</p>
+   <a href="#order"><button id="button1" class="btn">Place an Order</button></a>
+   <!-- REMEMBER: The  href="#order" here is to connect the button to the section it should go to once clicked. So you give it
+   a hyper-reference href="" then the ID of the section it should refer to. -->
+ </div>
+ <div class="image" data-aos="fade-up">
+   <!-- data-aos="fade-up" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
+    <img src="public/pizza3.jpg" alt="">
+ </div>
+</section>
+<!-- Demacate Landing page ends here -->
+
+<!-- Start of About us section -->
+<section class="aboutus" id="about">
+  <div class="image1"  data-aos="fade-right"></div>
+  <!-- data-aos="fade-right" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
+    <div class="aboutuscontent"  data-aos="fade-left">
+      <!-- data-aos="fade-left" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
+        <h3 id="aboutus1">This is who we are!!</h3>
+        <p>Nonnie Pizza Inn is the best tasting flame grilled chicken in the world, with massive flavour right through.
+          Our traditional marinade is made from all natural ingredients infused with select herbs and spices.
+          Slowly marinated for at least 24 hours, flame grilled to perfection and served to order, making it the healthiest,
+          tastiest flame grilled chicken in town.</p>
+        <p>Our founder, Truett Cathy, made the decision to close on Sundays in 1946 when he opened his first restaurant in Nairobi.
+          Having worked seven days a week in restaurants open 24 hours, Truett saw the importance of closing on Sundays so
+          that he and his employees could set aside one day to rest and worship if they choose — a practice we uphold today.
+        </p>
+        <a href="#order"><button id="button2" class="btn">Order a pizza today!</a>
+          <!-- REMEMBER: The  href="#order" here is to connect the button to the section it should go to once clicked. So you give it
+          a hyper-reference href="" then the ID of the section it should refer to. -->
+    </div>
+</section>
+<!-- End of About us section -->
+
+<!-- Section for menu starts............. -->
+<section id="menu" class="menu1" >
+    <!-- <h1 class="heading5">Size of the <span id="menuspan">Pizza I want</span></h1> -->
+                                        <!-- Created the span and span id to be able to style the name FOODS seperately.  -->
+    <!-- <ul id="list"  data-aos="fade-left">
+        <li class="button3" id="button3" data-src="public/pizza7.jpg">Small</li>
+        <li class="button3" id="button3"  data-src="public/pizza7.jpg">Medium</li>
+        <li class="button3" id="button3" data-src="public/pizza7.jpg">Large</li> -->
+        <!-- <li class="button3"  id="button3" data-src="public/pizza7.jpg">Dessert</li> -->
+    <!-- </ul>
+    <h1 class="heading5">The kind of <span id="menuspan">Crust I want</span></h1> -->
+                                        <!-- Created the span and span id to be able to style the name FOODS seperately.  -->
+    <!-- <ul id="list"  data-aos="fade-left">
+        <li class="button3" id="button3" data-src="public/pizza7.jpg">Crispy</li>
+        <li class="button3" id="button3"  data-src="public/pizza7.jpg">Stuffed</li>
+        <li class="button3" id="button3" data-src="public/pizza7.jpg">Gluten-free</li>
+        <li class="button3"  id="button3" data-src="public/pizza7.jpg">Toppings</li>
+    </ul> -->
+    <!-- Order section starts.... -->
+    <div class="placeorder" id="order">
+      <h1 id="heading33">Place your<span class="orderspan"> Order</span></h1>
+      <div class="row" id="orderrow"  data-aos="fade-right">
+        <!-- data-aos="fade-right" To make the content fade in as you load/scroll.....W3SCHOOLS CSS3 -->
+        <div class="">
+          <label for="pizzasize" id="orderheader">Select size of Pizza to order</label>
+            <select class="pizzasize" name="size" id="size">
+                <option  label="small - ksh 350" id="optionlabel" value="350" class="small">Small</option>
+                <option label="medium - ksh 550" id="optionlabel" value="550" class="medium">Medium</option>
+                <option label="Large - ksh 1350" id="optionlabel"  value="1350" class="large">Large</option>
+            </select> </br>
+            <label for="Crust" id="orderheader">Select the Crust you want</label>
+              <select class="Crust" name="Crust" id="crust">
+                  <option  id="optionlabel" label="crispy - ksh 550"  value="150" class="crispy">Crispy</option>
+                  <option  id="optionlabel"  label="stuffed - ksh 550" value="250" class="stuffed">Stuffed</option>
+                  <option  id="optionlabel"  label="gluten - ksh 550" value="350" class="gluten">Gluten-free</option>
+              </select> </br>
+                <label for="toppings" id="orderheader">Select the Toppings you want</label>
+                  <select class="toppings" name="toppings" id="toppings">
+                      <option  id="optionlabel" value="350"  class="cheese">cheese</option>
+                      <option  id="optionlabel" value="250" class="broccoli ">broccoli</option>
+                      <option  id="optionlabel" value="350" class="mushrooms">mushrooms</option>
+                  </select> </br>
+          <h1 id="orderheader">Do you want your order delivered? If yes, enter your details below</h1>
+        <label><input type="radio" class="radiobtn" name="optiom" checked><span id="optionlabel">YES (Enter details below)</span></label></br>
+        <label><input type="radio" class="radiobtn" name="optiom" checked><span id="optionlabel" >NO</span></label>
+        </div>
+        <form class="orderf" method="">
+          <input type="text" name="" class="boxorder" id="name" placeholder="Enter your name....">
+          <input type="text" name="" class="boxorder" id="location" placeholder="Where to deliver your order...">
+          <input type="number" name="" class="boxorder" placeholder="Number of pizzas you want..." id="quantity">
+          <textarea name="" rows="9" cols="30" class="address" placeholder="Enter your address here...."></textarea>
+          <input onclick="getTotalAmount()" type="submit" id="button3" value="Checkout">
+
+
+        </form>
+      </div>
+
+    <!-- Order section ends.... -->
+</section>
+<!-- Section for menu ends.......... -->
+
+<!-- Today's special offers starts.... -->
+<section id="popular" class="popular" >
+  <h1 class="heading6">Today's <span id="popular">Special</span> Offers</h1>
+  <div class="box-container">
+    <div class="box">
+      <img src="public/pizza99.jpeg" id="img2" alt="">
+      <h3 class="h3">Your Favourites</h3>
+        <div class="stars">
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+        </div>
+        <div class="price">
+            <p>KSHs 300</p>
+        </div>
+        <a href="#order"><button id="button4" class="btn">add to cart</a>
+    </div>
+    <div class="box">
+      <img src="public/pizza99.jpeg"  id="img2" alt="">
+      <h3 class="h3">Your Favourites</h3>
+        <div class="stars">
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+        </div>
+        <div class="price">
+            <p>KSHs 300</p>
+        </div>
+        <a href="#order"><button id="button4" class="btn">add to cart</a>
+    </div>
+    <div class="box">
+      <img src="public/pizza99.jpeg"  id="img2" alt="">
+      <h3 class="h3">Your Favourites</h3>
+        <div class="stars">
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+        </div>
+        <div class="price">
+            <p>KSHs 300</p>
+        </div>
+        <a href="#order"><button id="button4" class="btn">add to cart</a>
+    </div>
+    <div class="box">
+      <img src="public/pizza99.jpeg"  id="img2" alt="">
+      <h3 class="h3">Your Favourites</h3>
+        <div class="stars">
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+          <i class="smileyface"><i class="fas fa-grin-stars"></i></i>
+        </div>
+        <div class="price">
+            <p>KSHs 300</p>
+        </div>
+        <a href="#order"><button id="button4" class="btn">add to cart</a>
+    </div>
+  </div>
+</section>
+<!-- Today's special offers starts.... -->
+
+<!-- CSS3 Animate On Scroll link.. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+</script>
+<!-- CSS3 Animate On Scroll link.. -->
+<!-- jquery link -->
+
+<!-- Gotten this link from cdnjs.com then typed aos.....w3 schools css3 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- // Linking to my local js file -->
+<script src="js/scripts.js"></script>
+<script>
+AOS.init ({
+  delay:100, duration: 500
+})
+</script>
+  </body>
+
+</html>
+
+    <!-- <div class="row">
+        <div class="image">
+            <img src="public/menu2.jpg" id= "menu-img" alt="">
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+          <h3> <span>01.</span>Choose your pizza like a king holding a king's hand</h3>
+          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
+             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
+             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
+             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
+        </div>
+        <div class="info">
+          <h3> <span>02.</span>Choose your pizza like a king holding a king's hand</h3>
+          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
+             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
+             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
+             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
+        </div>
+        <div class="info">
+          <h3> <span>03.</span>Choose your pizza like a king holding a king's hand</h3>
+          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
+             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
+             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
+             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
+        </div>
+        <div class="info">
+          <h3> <span>04.</span>Choose your pizza like a king holding a king's hand</h3>
+          <p>Walk from the Lamu beach barefoot,find Chef Steve creating an outstanding special
+             pizza along with our amazing daily Beach Menu which includes chowders, "street tacos",
+             sandwiches, huge burgers, great wings, fresh local seafood and the coldest beer on the
+             Island (huge selection of craft, imported and domestic beers) ALL FOR YOU!!</p>
+        </div>
+    </div> -->
