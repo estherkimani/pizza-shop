@@ -6,7 +6,11 @@ This project inputs a clients preferred piza flavor, size and address. The websi
 
 ### How it works
 
-User enters the date month and year
+User clicks on the place order button
+This action takes to the Order-Now section of the page
+User enters their details and preferrances including the number of pizzas
 System validates the input given
-Runs through the loop to assign the appropriate akan name based on gender, and day of the dayOfWeek
-Javascript gives an alert on the Akan Name
+Runs through the loop to compute the total cost
+Javascript gives an alert on the total cost
+
+###
