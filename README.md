@@ -13,4 +13,13 @@ System validates the input given
 Runs through the loop to compute the total cost
 Javascript gives an alert on the total cost
 
-###
+### Live link:
+https://estherkimani.github.io/pizza-shop/
+--------------------------------------------------------------
+
+### Technologies Used
+
+Boostrap
+html
+javascript
+jQuery
